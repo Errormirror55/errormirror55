@@ -56,7 +56,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
         sendMarkup(
-            'Oops! not a Authorized user.\nPlease deploy your own <b>slam-mirrorbot</b>.',
+            'Oops! not a Authorized user.',
             context.bot,
             update,
             reply_markup,
@@ -156,7 +156,7 @@ help_string_telegraph = f'''<br>
 help = Telegraph(access_token=telegraph_token).create_page(
         title='ErrorMirror Bot CMD',
         author_name='@SYSTEMERRORBD',
-        author_url='t.me/systemerrorbd',
+        author_url='https://t.me/SystemerrorBD',
         html_content=help_string_telegraph,
     )["path"]
 
